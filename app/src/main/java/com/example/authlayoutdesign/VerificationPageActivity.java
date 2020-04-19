@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
 
-public class VerificationPage extends AppCompatActivity {
+public class VerificationPageActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     Button homeButton,confirmButton,editNumberButton;
@@ -124,8 +124,8 @@ public class VerificationPage extends AppCompatActivity {
                 if(((EditText)findViewById(R.id.editTextDigit6)).getText().toString().length()==1)
                 {
                     ((EditText) findViewById(R.id.editTextDigit6)).setCursorVisible(false);
-                    findViewById(R.id.btn_confirm).clearFocus();
-                    findViewById(R.id.btn_confirm).requestFocus();
+                    findViewById(R.id.btn_continue).clearFocus();
+                    findViewById(R.id.btn_continue).requestFocus();
                     hideSoftInput();
                 }
             }
@@ -150,7 +150,7 @@ public class VerificationPage extends AppCompatActivity {
         });
 
         ToggleResendTextView(textViewResendOTP);
-        confirmButton = findViewById(R.id.btn_confirm);
+        confirmButton = findViewById(R.id.btn_continue);
         editNumberButton = findViewById(R.id.btn_change_number);
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override

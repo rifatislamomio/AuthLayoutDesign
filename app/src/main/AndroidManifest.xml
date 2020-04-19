@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".VerificationPage"/>
-        <activity android:name=".activity_sign_up" />
+        <activity android:name=".VerificationPageActivity"/>
+        <activity android:name=".SignUpActivity" />
         <activity android:name=".activity_user_info_form" />
 
         <activity android:name=".MainActivity">
