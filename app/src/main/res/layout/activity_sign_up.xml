@@ -29,8 +29,6 @@
                 android:layout_marginTop="85dp"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/ic_phone_no_icon" />
-
-
         </RelativeLayout>
     </LinearLayout>
 
@@ -121,7 +119,6 @@
             android:orientation="horizontal"
             android:layout_marginTop="40dp"
             android:gravity="center">
-
 
             <Button
                 android:id="@+id/btn_continue"

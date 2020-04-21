@@ -1,6 +1,7 @@
 package com.example.authlayoutdesign;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
@@ -30,6 +31,8 @@ public class VerificationPageActivity extends AppCompatActivity {
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SignUpActivity.ISRETURNEDFROMVERLAYOUT = true;
+                startActivity(new Intent(getApplicationContext(), SignUpActivity.class));
                 finish();
             }
         });
@@ -159,13 +162,16 @@ public class VerificationPageActivity extends AppCompatActivity {
             }
         });
 
+
         editNumberButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //I will do it :)
+                startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
+                SignUpActivity.ISRETURNEDFROMVERLAYOUT = true;
+
             }
         });
-
 
     }
 
@@ -186,6 +192,6 @@ public class VerificationPageActivity extends AppCompatActivity {
                 textView.setEnabled(true);
                 textView.setTextColor(getResources().getColor(R.color.colorActive));
             }
-        }, 30000);
+        }, 10000);
     }
 }
