@@ -11,7 +11,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".VerificationPageActivity"/>
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".UserInfoFormActivity" />
+        <activity android:name=".UserInfoFormActivity" android:windowSoftInputMode="stateHidden"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>

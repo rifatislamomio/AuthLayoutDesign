@@ -6,4 +6,5 @@
     <color name="colorInactive">#A5A5A5</color>
     <color name="colorActive">#2979FF</color>
     <color name="color_top_part_background">#3D5AFE</color>
+    <color name="color_user_info_edit_text">#4A4A4A</color>
 </resources>

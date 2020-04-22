@@ -40,7 +40,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="30dp">
+            android:layout_marginTop="30dp"
+            android:paddingBottom="30dp">
 
             <TextView
                 android:id="@+id/textView2"
@@ -75,8 +76,9 @@
                 android:textColor="#010E55"
                 android:textSize="15sp"
                 />
+
             <EditText
-                android:id="@+id/FirstNameEditText"
+                android:id="@+id/userName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -87,28 +89,29 @@
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:fontFamily="@font/roboto"
-                android:hint="First Name"
+                android:hint="Full Name"
                 android:inputType="textPersonName"
-                android:textColorHint="@color/colorPrimaryDark" />
+                android:textColorHint="@color/color_user_info_edit_text" />
+
 
             <EditText
-                android:id="@+id/LastNameeditText"
+                android:id="@+id/homeAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginBottom="5dp"
-                android:drawableLeft="@drawable/ic_last_name"
+                android:drawableLeft="@drawable/ic_home_address"
                 android:drawablePadding="5dp"
                 android:ems="10"
-                android:fontFamily="@font/roboto"
-                android:hint="Last Name"
-                android:inputType="textPersonName"
-                android:textColorHint="@color/colorPrimaryDark" />
+                android:hint="Home Address"
+                android:inputType="textPostalAddress"
+                android:textColorHint="@color/color_user_info_edit_text" />
+
 
             <EditText
-                android:id="@+id/PhoneeditText"
+                android:id="@+id/workAdress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -119,56 +122,51 @@
                 android:drawablePadding="5dp"
                 android:ems="10"
                 android:fontFamily="@font/roboto"
-                android:hint="Phone"
-                android:inputType="phone"
-                android:textColorHint="@color/colorPrimaryDark" />
+                android:hint="Work Address (Optional)"
+                android:inputType="text"
+                android:textColorHint="@color/color_user_info_edit_text" />
+
 
             <EditText
-                android:id="@+id/AddresseditText"
+                android:id="@+id/dateOfBirth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginBottom="5dp"
-                android:drawableLeft="@drawable/ic_home_address"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_date"
                 android:drawablePadding="5dp"
                 android:ems="10"
-                android:hint="Address"
-                android:inputType="textPostalAddress"
-                android:textColorHint="@color/colorPrimaryDark" />
+                android:fontFamily="@font/roboto"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:textColorHint="@color/color_user_info_edit_text" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:paddingBottom="5dp"
+                android:paddingBottom="45dp"
                 android:paddingTop="5dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/Cancelbutton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/custom_cancel_button"
-                    android:fontFamily="@font/roboto_medium"
-                    android:paddingStart="42dp"
-                    android:paddingEnd="42dp"
-                    android:text="Cancel"
-                    android:textColor="#FFF" />
 
                 <Button
-                    android:id="@+id/Savebutton"
+                    android:id="@+id/SaveProfButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:background="@drawable/custom_save_button"
-                    android:fontFamily="@font/roboto_medium"
+                    android:fontFamily="@font/roboto_bold"
                     android:paddingStart="50dp"
                     android:paddingEnd="50dp"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
                     android:text="Save"
+                    android:textSize="16sp"
                     android:textColor="#FFF" />
 
             </LinearLayout>

@@ -159,6 +159,9 @@ public class VerificationPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Write OTP Submission Function Here
+                finish();
+                startActivity(new Intent(getApplicationContext(),UserInfoFormActivity.class));
+
             }
         });
 
@@ -166,7 +169,6 @@ public class VerificationPageActivity extends AppCompatActivity {
         editNumberButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //I will do it :)
                 startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
                 SignUpActivity.ISRETURNEDFROMVERLAYOUT = true;
 
