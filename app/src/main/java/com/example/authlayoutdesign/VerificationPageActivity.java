@@ -143,7 +143,7 @@ public class VerificationPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),"RESEND OTP",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"RESENDING OTP",Toast.LENGTH_SHORT).show();
                 textViewResendOTP.setEnabled(false);
                 textViewResendOTP.setTextColor(getResources().getColor(R.color.colorInactive));
                 ToggleResendTextView(textViewResendOTP);

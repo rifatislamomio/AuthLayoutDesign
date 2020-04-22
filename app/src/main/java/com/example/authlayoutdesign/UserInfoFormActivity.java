@@ -22,7 +22,6 @@ public class UserInfoFormActivity extends AppCompatActivity {
         save_profile = findViewById(R.id.SaveProfButton);
 
 
-
         save_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,7 +32,15 @@ public class UserInfoFormActivity extends AppCompatActivity {
                 //Write save profile function
             }
         });
+
+
+
+
+
     }
+
+
+
     void RequiredEditText(EditText e)
     {
         if(e.getText().toString().length()==0)

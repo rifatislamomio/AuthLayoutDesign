@@ -6,6 +6,7 @@
     android:orientation="vertical"
     tools:context=".SignUpActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,111 +33,116 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="30dp">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
-            android:text="Register Mobile Number"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#031739"
-            android:textSize="22sp" />
-
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginEnd="40dp"
-            android:fontFamily="@font/roboto"
-            android:text="You must have to register your mobile number"
-            android:textAlignment="center"
-            android:textColor="#010E55"
-            android:textSize="15sp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:fontFamily="@font/roboto"
-            android:text="Please insert mobile number below"
-            android:textAlignment="center"
-            android:textColor="#010E55"
-            android:textSize="15sp"
-            />
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/editText_phoneNumber"
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="70dp"
-                android:layout_marginEnd="70dp"
-                android:layout_weight="1"
-                android:background="@drawable/phone_number_textbox"
-                android:drawablePadding="-25dp"
                 android:fontFamily="@font/roboto_medium"
-                android:inputType="phone"
-                android:maxLength="16"
-                android:paddingStart="5dp"
-                android:paddingTop="6dp"
-                android:paddingEnd="5dp"
-                android:paddingBottom="6dp"
-                android:text="+880 "
+                android:text="Register Mobile Number"
                 android:textAlignment="center"
-                android:textCursorDrawable="@drawable/edit_text_small_cursor"
-                android:textSize="20sp" />
-        </LinearLayout>
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#031739"
+                android:textSize="22sp" />
 
-        <TextView
-            android:id="@+id/TextViewTerm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:enabled="false"
-            android:text="Before proceeding, read the terms &amp; conditons"
-            android:textAlignment="center"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@color/colorActive" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/btn_continue"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="35dp"
-                android:paddingEnd="35dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/verification_page_button"
-                android:backgroundTint="#FF1744"
-                android:fontFamily="@font/roboto_bold"
-                android:padding="20dp"
-                android:text="Continue"
-                android:textColor="#fff"
-                android:textSize="16sp" />
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/roboto"
+                android:text="You must have to register your mobile number"
+                android:textAlignment="center"
+                android:textColor="#010E55"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/roboto"
+                android:text="Please insert mobile number below"
+                android:textAlignment="center"
+                android:textColor="#010E55"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_phoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/phone_number_textbox"
+                    android:drawablePadding="-25dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:inputType="phone"
+                    android:maxLength="16"
+                    android:paddingStart="5dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="6dp"
+                    android:text="+880 "
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@drawable/edit_text_small_cursor"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextViewTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:enabled="false"
+                android:text="Before proceeding, read the terms &amp; conditons"
+                android:textAlignment="center"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorActive" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/verification_page_button"
+                    android:backgroundTint="#FF1744"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="20dp"
+                    android:paddingStart="35dp"
+                    android:paddingEnd="35dp"
+                    android:text="Continue"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

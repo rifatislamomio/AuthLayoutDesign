@@ -3,19 +3,21 @@ package com.example.authlayoutdesign;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 public class SignUpActivity extends AppCompatActivity {
 
-    Button btnContinue, btnHomeSignup,btnForwardSignup;
+    Button btnContinue,btnHomeSignup,btnForwardSignup;
     EditText phoneNumber;
     TextView textViewTermsCond;
     public static String PHONE_NUMBER;
@@ -73,6 +75,10 @@ public class SignUpActivity extends AppCompatActivity {
                     phoneNumber.setSelection(phoneNumber.getText().toString().length());
                 }
                 countB = countA;
+                if(phoneNumber.getText().toString().length()==16)
+                {
+                    hideSoftInput();
+                }
             }
             @Override
             public void afterTextChanged(Editable s) { }
@@ -120,5 +126,13 @@ public class SignUpActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void hideSoftInput() {
+        View view1 = this.getCurrentFocus();
+        if(view1!= null){
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view1.getWindowToken(), 0);
+        }
     }
 }
