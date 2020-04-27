@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".VerificationPageActivity"/>
+        <activity android:name=".PostActivity"></activity>
+        <activity android:name=".NewsFeedActivity" />
+        <activity android:name=".VerificationPageActivity" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".UserInfoFormActivity" android:windowSoftInputMode="stateHidden"/>
-
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".UserInfoFormActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MainActivity" android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
